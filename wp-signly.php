@@ -17,6 +17,17 @@ function signlyScript() {
         
         'src' => esc_url('https://cdn.signly.co/release/latest/signly.umd.min.js')
     ));
+
+     $on = "window.turnOnSignly()";
+    echo wp_get_inline_script_tag( $on );
+
 }
 
+
 add_action('wp_footer', 'signlyScript');
+
+
+function signly_style_scripts() {
+    wp_enqueue_style( 'signly-style', 'https://cdn.signly.co/release/latest/signly.css' );
+}
+add_action( 'wp_enqueue_scripts', 'signly_style_scripts' );

@@ -1,11 +1,11 @@
 === Signly ===
-Contributors: iatro, singly
+Contributors: iatro, signly
 Donate link: https://signly.co
-Tags: singly, texthelp, accessibility, web, speech, reading, writing, tools
+Tags: signly, texthelp, accessibility, web, speech, reading, writing, tools
 Requires at least: 5.7
 Requires PHP: 5.2
 Tested up to: 5.8
-Stable tag: 1.6.7
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

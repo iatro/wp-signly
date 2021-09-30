@@ -4,8 +4,8 @@
 Plugin Name: Signly
 Plugin URI:  https://www.signly.co
 Description: BSL for Websites
-Version:     1.6.7
-Author:      Texthelp
+Version:     2.0.0
+Author:      Iatro.Health
 Author URI:  https://www.iatro.heath
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -33,7 +33,8 @@ add_action( 'wp_enqueue_scripts', 'signly_style_scripts' );
 function signly_activate() { ?>
     <script type="text/javascript">
        
-        window.turnOnSignly()
-    </script><?php
+        window.localStorage.setItem("showSignly", "true");
+    </script>
+    <?php
 }
 add_action( 'wp_footer', 'signly_activate' );
